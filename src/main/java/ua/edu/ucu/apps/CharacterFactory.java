@@ -61,7 +61,7 @@ public class CharacterFactory {
             extractCharacters();
         }
 
-        int choice = ThreadLocalRandom.current().nextInt(constructors.size());
+        int choice = random.nextInt(constructors.size());
         Constructor<? extends Character> constructor = constructors.get(choice);
         if (hasArgument.get(choice)) {
             return constructor.newInstance(random);

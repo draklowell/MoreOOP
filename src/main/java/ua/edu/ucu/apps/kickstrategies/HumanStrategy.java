@@ -18,7 +18,7 @@ public class HumanStrategy implements KickStrategy {
 
     @Override
     public void kick(Character kicker, Character kicked) {
-        int damage = random.nextInt(0, kicker.getPower() + 1);
+        int damage = random.nextInt(kicker.getPower() + 1);
         kicked.setHp(kicked.getHp() - damage);
     }
 }

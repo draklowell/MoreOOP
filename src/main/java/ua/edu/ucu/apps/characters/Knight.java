@@ -12,8 +12,8 @@ public class Knight extends Character {
 
     public Knight(Random random) {
         super(
-                random.nextInt(2, 13),
-                random.nextInt(2, 13),
+                random.nextInt(11) + 2,
+                random.nextInt(11) + 2,
                 new HumanStrategy(random));
     }
 }

@@ -12,8 +12,8 @@ public class King extends Character {
 
     public King(Random random) {
         super(
-                random.nextInt(5, 16),
-                random.nextInt(5, 16),
+                random.nextInt(11) + 5,
+                random.nextInt(11) + 5,
                 new HumanStrategy(random));
     }
 }
