@@ -39,16 +39,16 @@ public class CharacterFactory {
 
             try {
                 Constructor<? extends Character> constructor = current.getConstructor(Random.class);
-                constructors.addLast(constructor);
-                hasArgument.addLast(true);
+                constructors.add(constructor);
+                hasArgument.add(true);
                 continue;
             } catch (NoSuchMethodException e) {
             }
 
             try {
                 Constructor<? extends Character> constructor = current.getConstructor();
-                constructors.addLast(constructor);
-                hasArgument.addLast(false);
+                constructors.add(constructor);
+                hasArgument.add(false);
             } catch (NoSuchMethodException e) {
                 continue;
             }
