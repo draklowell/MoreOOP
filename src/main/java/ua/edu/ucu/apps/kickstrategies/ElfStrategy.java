@@ -8,7 +8,7 @@ public class ElfStrategy implements KickStrategy {
         if (kicker.getPower() > kicked.getPower()) {
             kicked.setHp(0);
         } else {
-            kicker.setPower(kicker.getPower() - 1);
+            kicked.setPower(kicked.getPower() - 1);
         }
     }
 }
