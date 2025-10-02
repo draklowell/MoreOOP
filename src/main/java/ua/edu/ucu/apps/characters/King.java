@@ -16,4 +16,8 @@ public class King extends Character {
                 random.nextInt(11) + 5,
                 new HumanStrategy(random));
     }
+
+    public String toString() {
+        return "King{hp=" + getHp() + ", power=" + getPower() + "}";
+    }
 }

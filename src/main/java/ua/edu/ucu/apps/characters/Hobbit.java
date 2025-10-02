@@ -10,4 +10,8 @@ public class Hobbit extends Character {
     public void toCry() {
         System.out.println("Hobbit cries :(");
     }
+
+    public String toString() {
+        return "Hobbit{hp=" + getHp() + ", power=" + getPower() + "}";
+    }
 }

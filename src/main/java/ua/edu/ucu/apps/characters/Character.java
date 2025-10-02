@@ -1,8 +1,10 @@
 package ua.edu.ucu.apps.characters;
 
 import lombok.Getter;
+import lombok.ToString;
 import ua.edu.ucu.apps.kickstrategies.KickStrategy;
 
+@ToString
 public class Character {
     @Getter
     private int power;
